@@ -1,0 +1,34 @@
+### Spring Data Jpa 사용 테스트를 위한 http request
+
+### Post "Hello!"
+POST http://localhost:8080/db/data
+Content-Type: application/json
+
+{
+  "text": "Hello!"
+}
+
+### Post "Bonjour!"
+
+POST http://localhost:8080/db/data
+Content-Type: application/json
+
+{
+  "text": "Bonjour!"
+}
+
+### Post "Privet!"
+
+POST http://localhost:8080/db/data
+Content-Type: application/json
+
+{
+  "text": "Privet!"
+}
+
+### Get all the messages
+GET http://localhost:8080/db/data
+
+
+### Get the message by its id
+GET http://localhost:8080/db/data/62ac8e91-2ed6-4f8e-b7f2-981f1b0a8407
